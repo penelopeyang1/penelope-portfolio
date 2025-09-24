@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import Landing from './components/Landing';
-import SelectedWorks from './components/SelectedWorks';
-import TechStack from './components/TechStack';
-import About from './components/About';
-import Contact from './components/Contact';
+import Header from './components/Header/Header';
+import Landing from './components/Landing/Landing';
+import Projects from './components/Projects/Projects';
+import TechStack from './components/TechStack/TechStack';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import Modal from 'react-modal';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 Modal.setAppElement('#root');
 
@@ -29,7 +29,7 @@ export default function App() {
       <Header />
       <main>
         <Landing />
-        <SelectedWorks openModal={openModal} />
+        <Projects openModal={openModal} />
         <TechStack />
         <About />
         <Contact />

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css';
-import Signature from './Signature'; // Import the Signature component
+import Signature from '../Signature/Signature'; // Import the Signature component
 
 export default function Landing() {
   return (

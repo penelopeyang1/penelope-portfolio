@@ -1,5 +1,5 @@
 import React from 'react';
-import './SelectedWorks.css';
+import './Projects.css';
 
 const projects = [
   {
@@ -19,7 +19,7 @@ const projects = [
   }
 ];
 
-export default function SelectedWorks({ openModal }) {
+export default function Projects({ openModal }) {
   return (
     <section id="works" className="works-section">
       <h2>Selected Works</h2>
