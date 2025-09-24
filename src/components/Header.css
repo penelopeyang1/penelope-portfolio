@@ -1,0 +1,65 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* background: #fff; */
+  /* Remove box-shadow for clean look */
+}
+
+.header-line {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #bdbdbd;
+  opacity: 0.7;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+}
+
+.logo {
+  font-family: 'Very Vogue', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  font-family: 'Very Vogue', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #0070f3;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .nav ul {
+    gap: 1rem;
+  }
+} 

@@ -1,0 +1,20 @@
+.footer {
+  background: transparent;
+  padding: 0 0 32px 0;
+  text-align: center;
+}
+
+.footer-line {
+  width: 92%;
+  max-width: 1100px;
+  margin: 0 auto 18px auto;
+  border: none;
+  border-top: 1px solid #bdbdbd;
+  opacity: 0.7;
+}
+
+.footer-content {
+  color: #888;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+} 

@@ -1,0 +1,74 @@
+.tech-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+
+.tech-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.tech-carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.tech-carousel {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-item {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 110px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.tech-item:hover {
+  box-shadow: 0 4px 16px rgba(0,112,243,0.13);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.tech-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-name {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .tech-item {
+    min-width: 80px;
+    padding: 0.75rem 0.5rem;
+  }
+  .tech-icon {
+    font-size: 1.3rem;
+  }
+} 
