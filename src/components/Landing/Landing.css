@@ -4,18 +4,27 @@
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  padding: 1rem;
+  padding: none;
   text-align: center;
   background-color: #f8f5f0; /* fallback color */
   background-image: url('../../assets/gradient-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: -3rem;
 }
 
 .landing-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.landing-intro {
   max-width: 800px;
-  margin: 7rem auto ;
+  margin: 7rem 0 7rem 7rem ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +51,7 @@
   transition: all 0.3s ease;
 }
 
-.intro {
+.description {
   font-family: 'GeistMono', monospace;
   font-style: normal;
   font-size: 1.2rem;
@@ -52,6 +61,17 @@
   margin: 0;
   max-width: 600px;
   letter-spacing: 0.01em;
+}
+
+.polaroid {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Animation for the landing content */
