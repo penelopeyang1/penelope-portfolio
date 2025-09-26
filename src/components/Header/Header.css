@@ -26,10 +26,18 @@
 
 .logo {
   font-family: 'Very Vogue', serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 1.3rem;
   letter-spacing: 0.5px;
+  border: 0.5px solid #000;
+  border-radius: 50%;
+  padding: 1rem 3rem; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  aspect-ratio: 9 / 1.5; 
 }
 
 .nav ul {
@@ -42,7 +50,7 @@
 
 .nav a {
   font-family: 'Very Vogue', serif;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.3px;

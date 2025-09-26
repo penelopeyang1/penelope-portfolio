@@ -30,7 +30,6 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <hr className="header-line" />
     </header>
   );
 } 

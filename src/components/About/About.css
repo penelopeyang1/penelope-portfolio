@@ -8,9 +8,11 @@
 .about-section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  font-style: normal;
 }
 
 .about-bio {
+  font-family: 'GeistMono', monospace;
   font-size: 1.15rem;
   color: #333;
   max-width: 700px;
