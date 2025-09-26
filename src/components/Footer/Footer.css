@@ -1,7 +1,11 @@
 .footer {
   background: transparent;
+  background-image: url('../../assets/gradient-footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 0 0 32px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-line {
@@ -14,7 +18,26 @@
 }
 
 .footer-content {
-  color: #888;
+  color: #000000;
   font-size: 1rem;
   letter-spacing: 0.02em;
+  padding-left: 8rem;
 } 
+
+.footer-content .thanks {
+  font-family: "Very Vogue", serif;
+  font-size: 2rem;
+}
+
+.footer-content .made-with {
+  font-family: 'GeistMono', monospace;
+  font-size: 0.9rem;
+  color: #484646;
+}
+
+.footer-content .copyright {
+  color: #484646;
+  font-size: 1rem;
+  font-family: 'Very Vogue Italic', 'Very Vogue', serif;
+  font-style: italic;
+}

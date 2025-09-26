@@ -2,8 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  /* background: #fff; */
-  /* Remove box-shadow for clean look */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header-line {
@@ -25,19 +26,11 @@
 }
 
 .logo {
-  font-family: 'Very Vogue', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.3rem;
-  letter-spacing: 0.5px;
-  border: 0.5px solid #000;
-  border-radius: 50%;
-  padding: 1rem 3rem; 
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  aspect-ratio: 9 / 1.5; 
+  height: 50px;
+  width: auto;
+  padding: -50px;
+  display: block;
+  /* object-fit: contain; */
 }
 
 .nav ul {
@@ -49,16 +42,33 @@
 }
 
 .nav a {
-  font-family: 'Very Vogue', serif;
+  font-family: 'Very Vogue Bold', serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.3px;
-  transition: color 0.2s;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
 }
 
 .nav a:hover {
-  color: #0070f3;
+  /* color: #0070f3; */
+  cursor: pointer;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 700px) {

@@ -1,22 +1,46 @@
 @font-face {
   font-family: 'Very Vogue';
-  src: url('./assets/nicky-laatz-very-vogue-display.otf') format('opentype');
+  src: url('./assets/fonts/nicky-laatz-very-vogue-display.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Very Vogue';
-  src: url('./assets/nicky-laatz-very-vogue-display-italic.otf') format('opentype');
+  font-family: 'Very Vogue Italic';
+  src: url('./assets/fonts/nicky-laatz-very-vogue-display-italic.otf') format('opentype');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
+  font-family: 'Very Vogue Bold';
+  src: url('./assets/fonts/nicky-laatz-very-vogue-text.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Very Vogue Bold Italic';
+  src: url('./assets/fonts/nicky-laatz-very-vogue-text-italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'GeistMono';
-  src: url('./assets/GeistMono-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/GeistMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sloop Script';
+  src: url('./assets/fonts/Sloop-ScriptThree.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

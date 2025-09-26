@@ -6,7 +6,11 @@ export default function Footer() {
     <footer className="footer">
       <hr className="footer-line" />
       <div className="footer-content">
-        &copy; {new Date().getFullYear()} Penelope Yang
+      <p className="thanks">Thanks for visiting!</p>
+      <p className="made-with">Made with passion, ice water, and a good playlist</p>
+       <div className="copyright"> 
+        Penelope Yang &copy;{new Date().getFullYear()} 
+        </div> 
       </div>
     </footer>
   );

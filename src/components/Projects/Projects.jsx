@@ -21,12 +21,12 @@ const projects = [
 
 export default function Projects({ openModal }) {
   return (
-    <section id="works" className="works-section">
-      <h2>Selected Works</h2>
-      <div className="works-grid">
+    <section id="projects" className="projects-section">
+      <h2>Work</h2>
+      <div className="projects-grid">
         {projects.map((project, idx) => (
           <div
-            className="work-card"
+            className="project-card"
             key={project.title}
             tabIndex={0}
             onClick={() => openModal(

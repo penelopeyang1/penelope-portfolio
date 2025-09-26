@@ -1,10 +1,11 @@
 import React from 'react';
 import './Header.css';
+import logoImage from '../../assets/logo-penelope.png';
 
 const navLinks = [
-  { label: 'Home', to: 'landing' },
-  { label: 'Works', to: 'works' },
-  { label: 'Tech', to: 'tech' },
+  // { label: 'Home', to: 'landing' },
+  { label: 'Work', to: 'projects' },
+  // { label: 'Tech', to: 'tech' },
   { label: 'About', to: 'about' },
   { label: 'Contact', to: 'contact' },
 ];
@@ -21,7 +22,11 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <span className="logo">Penelope Yang</span>
+        <img 
+          src={logoImage}
+          alt="Penelope Yang Logo" 
+          className="logo"
+        />
         <ul>
           {navLinks.map(link => (
             <li key={link.to}>

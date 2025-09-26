@@ -1,3 +1,7 @@
+* {
+  cursor: default;
+}
+
 html {
   scroll-behavior: smooth;
 }

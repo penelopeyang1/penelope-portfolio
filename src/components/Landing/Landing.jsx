@@ -7,8 +7,9 @@ export default function Landing() {
     <section id="landing" className="landing-section">
       <div className="landing-content">
         <p className="greeting-text">Hello, my name is</p>
-        <Signature /> 
-        <p className="intro">Creative technologist, editor, and storyteller. I build digital experiences that connect ideas and people.</p>
+        {/* <Signature />  */}
+        <p className='name'>Penelope Yang</p>
+        <p className="intro">A software engineer building things she wished existed, combining creativity with experience in AI systems, full-stack apps, and business tools.</p>
       </div>
     </section>
   );
