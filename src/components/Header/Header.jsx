@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
 import logoImage from '../../assets/logo-penelope.png';
+import Logo from "../Logo/Logo.jsx";
+
 
 const navLinks = [
   // { label: 'Home', to: 'landing' },
@@ -27,6 +29,7 @@ export default function Header() {
           alt="Penelope Yang Logo" 
           className="logo"
         />
+        {/* <Logo /> */}
         <ul>
           {navLinks.map(link => (
             <li key={link.to}>

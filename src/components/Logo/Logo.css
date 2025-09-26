@@ -1,0 +1,28 @@
+.penelope-logo {
+    display: block;
+    cursor: pointer;
+    overflow: visible;
+  }
+  
+  .logo__oval {
+    fill: none;
+    stroke: #000;
+    stroke-width: 6;
+  }
+  
+  .logo__word {
+    font-family: "Very Vogue", serif; 
+    font-weight: 400;
+    font-size: 180px;             
+    fill: #000;
+    letter-spacing: 0.5px;
+  }
+  
+  .logo__butterfly {
+    fill: #000;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .penelope-logo { transition: none; }
+  }
+  
