@@ -44,4 +44,12 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'TestTiempos';
+  src: url('./assets/fonts/TestTiemposHeadline-Regular-BF66457a508e31a.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 } 
