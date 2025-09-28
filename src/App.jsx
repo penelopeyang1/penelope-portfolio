@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Landing from './components/Landing/Landing';
 import Projects from './components/Projects/Projects';
 import TechStack from './components/TechStack/TechStack';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import AboutPage from './pages/AboutPage';
 import Modal from 'react-modal';
 import Footer from './components/Footer/Footer';
 
 Modal.setAppElement('#root');
 
-export default function App() {
+function HomePage() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
@@ -31,8 +31,6 @@ export default function App() {
         <Landing />
         <Projects openModal={openModal} />
         <TechStack />
-        <About />
-        <Contact />
       </main>
       <Modal
         isOpen={modalIsOpen}
@@ -55,5 +53,16 @@ export default function App() {
       </Modal>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </Router>
   );
 } 

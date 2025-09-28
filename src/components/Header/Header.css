@@ -30,7 +30,7 @@
   width: auto;
   padding: -50px;
   display: block;
-  /* object-fit: contain; */
+  cursor: pointer;
 }
 
 .nav ul {
@@ -49,6 +49,14 @@
   transition: all 0.3s ease;
   position: relative;
   text-decoration: none;
+}
+
+.nav a:has(.logo) {
+  text-decoration: none;
+}
+
+.nav a:has(.logo)::after {
+  display: none;
 }
 
 .nav a:hover {
