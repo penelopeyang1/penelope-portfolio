@@ -13,7 +13,7 @@
   max-width: 1100px;
   margin: 0 auto 18px auto;
   border: none;
-  border-top: 1px solid #bdbdbd;
+  /* border-top: 1px solid #bdbdbd; */
   opacity: 0.7;
 }
 
@@ -48,6 +48,18 @@
   font-family: "Very Vogue", serif;
   font-size: 2rem;
   margin: 0 0 0.5rem 0;
+}
+
+.thanks-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.round-star {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .made-with {
@@ -87,8 +99,8 @@
 }
 
 .contact-link {
-  color: #484646;
-  text-decoration: underline !important;
+  color: #000000;
+  /* text-decoration: underline !important; */
   font-family: 'GeistMono', monospace !important;
   font-size: 0.8rem !important;
   transition: color 0.3s ease;
